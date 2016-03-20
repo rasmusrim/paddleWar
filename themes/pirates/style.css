@@ -1,0 +1,39 @@
+
+#arena {
+    background-image: url('http://localhost/paddleWar/public_html/themes/pirates/images/field.jpg');
+    width: 1000px;
+    height: 625px;
+    border: black solid 1px;
+    position: absolute;
+    
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    
+    background-image: url('http://localhost/paddleWar/public_html/themes/pirates/images/ball.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    position: absolute;
+
+}
+
+.paddle {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.left {
+    background-image: url('http://localhost/paddleWar/public_html/themes/pirates/images/player1.png');
+
+}
+
+.right {
+    background-image: url('http://localhost/paddleWar/public_html/themes/pirates/images/player2.png');
+
+}

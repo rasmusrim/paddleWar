@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">        
+        
+        <!-- jQuery !-->
+        <script src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+        <script src="jquery-ui/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+
+        <!-- Dependencies for game !-->
+        <script src="ball.class.js"></script>
+        <script src="paddle.class.js"></script>
+        <script src="paddlewar.class.js"></script>
+        <script src="controller.js"></script>
+    </head>
+    <body>
+        <div id="arena">
+            <div id="soundFx" class="fa fa-music" onclick="gameObj.toggleMute();"></div>
+            <div id="scoreBoard">0 - 0</div>
+            <div id="message" style="display: none;">0 - 0</div>
+        
+            
+            
+        </div>
+        
+        <div id="selectTheme_dialog" style="display: none;" class="dialog">
+            
+            
+            <img src="themes/pirates/images/player1.png" class="selectTheme" onclick="loadTheme('pirates');">
+            <img src="themes/football/images/player1.png" class="selectTheme" onclick="loadTheme('football');">
+            
+            
+        </div>
+    
+        
+        <div id="selectDifficulty_dialog" style="display: none;" class="dialog">
+            
+            
+            <button onclick="setDifficulty(60);">Easy</button>
+            <button onclick="setDifficulty(50);">Medium</button>
+            <button onclick="setDifficulty(40);">Hard</button>
+            <button onclick="setDifficulty(20);">Impossible</button>
+            
+            
+        </div>
+    
+    </body>
+    
+    
+</html>
