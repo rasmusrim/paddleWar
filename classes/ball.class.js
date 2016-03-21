@@ -1,5 +1,3 @@
-var speed = 4;
-
 var Ball = function(xPos, yPos) {
     $('#arena').append('<div class="ball" id="ball"></div>');
     this.setDiv($('#ball'));
@@ -50,8 +48,8 @@ Ball.prototype.move = function() {
     var stepY = this.getAngle() / 90;
     
     
-    this.setXPos(this.getXPos() + stepX * speed);
-    this.setYPos(this.getYPos() + stepY * speed);
+    this.setXPos(this.getXPos() + stepX * 4);
+    this.setYPos(this.getYPos() + stepY * 4);
     
     
     
