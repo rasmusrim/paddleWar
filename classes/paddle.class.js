@@ -29,7 +29,7 @@ Paddle.prototype.setAI = function(AI) {
     this.AI = AI;
 }
 
-Paddle.prototype.getAI = function() {
+Paddle.prototype.isAI = function() {
     return this.AI;
 }
 
