@@ -160,17 +160,14 @@ PaddleWar.prototype.moveAIPaddles = function() {
     for(side of sidesArr) {
         paddleObj = paddlesArr[side];
     
-        if(paddleObj.getAI()) {
-
-            // Calculate middle Y-position of paddle
-            var middleY = paddleObj.getYPos() + paddleObj.getDiv().height() / 2;
+        if(paddleObj.isAI()) {
 
             // Move up or down depending on position of ball
-            if(middleY > this.getBallObj().getYPos()) {
+            if(paddleObj.getYPos() > this.getBallObj().getYPos()) {
                 paddleObj.moveUp();
             }
 
-            if(middleY < this.getBallObj().getYPos()) {
+            if(paddleObj.getYPos() + paddleObj.getDiv().height() < this.getBallObj().getYPos() + this.getBallObj().getDiv().height()) {
                 paddleObj.moveDown();
             }
 
