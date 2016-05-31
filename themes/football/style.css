@@ -1,5 +1,5 @@
 #arena {
-    background-image: url('http://localhost/paddleWar/public_html/themes/football/images/field.jpg');
+    background-image: url('images/field.jpg');
     width: 1000px;
     height: 625px;
     border: black solid 1px;
@@ -11,7 +11,7 @@
     width: 30px;
     height: 30px;
     
-    background-image: url('http://localhost/paddleWar/public_html/themes/football/images/ball.png');
+    background-image: url('images/ball.png');
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -29,12 +29,12 @@
 }
 
 .left {
-    background-image: url('http://localhost/paddleWar/public_html/themes/football/images/player1.png');
+    background-image: url('images/player1.png');
 
 }
 
 .right {
-    background-image: url('http://localhost/paddleWar/public_html/themes/football/images/player2.png');
+    background-image: url('images/player2.png');
 
 }
 
